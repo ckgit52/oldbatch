@@ -6,7 +6,7 @@ function App() {
 
   const [data,setData]=useState(null);
   const [coord,setCoord]=useState(null)
-  const [city,setCity]=useState('chandigarh')
+  const [city,setCity]=useState('')
   
   const [lat,setLat]=useState(30.7333)
   const [log,setLog]=useState(76.7794)
@@ -37,7 +37,7 @@ function App() {
   },[city])
 
 
-  console.log(data)
+  // console.log(data)
 
   console.log(lat, " ",log);
 
@@ -53,7 +53,7 @@ function App() {
           <input onChange={(e)=>setCity(e.target.value)} className='bg-gray-500 rounded-md outline-none' type='text' value={city} />
 
           <div className='bg-yellow-200 rounded-full h-10 w-10 '></div>
-          <h1 className='text-3xl font-extrabold text-white'>{(data.main.temp-273).toFixed(2)}</h1>
+          <h1 className='text-3xl font-extrabold text-white'>{(data.main.temp-273.15).toFixed(1)}</h1>
 
           <p>{data.weather[0].main}.....{data.weather[0].description}</p>
 

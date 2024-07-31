@@ -1,0 +1,11 @@
+
+async
+  asynchronise....is the condition when our code doest not run line by line
+  generaly used in promises
+
+await :
+  is used in promisese with async to wait for peomise output either resolve or reject
+
+
+  
+

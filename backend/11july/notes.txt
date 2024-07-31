@@ -1,0 +1,7 @@
+//promise :  promises in javascript is know as eventual(latter) completion or rejection of some function
+
+
+
+
+
+
